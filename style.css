@@ -21,6 +21,10 @@ body{
     min-height: 100vh;
 }
 
+.top-banner, main{
+    max-width: 600px;
+    margin: 0 auto;
+}
 .top-banner{
     width: 100%;
     display: grid;
@@ -75,9 +79,12 @@ header nav{
     height: 20vh;
 }
 .main_slider > article{
-    width: 150px;
+    min-width: 150px;
+    width: 40%;
+    max-width: 200px;
     position: absolute;
-    left: calc(50% - 75px);
+    left: 50%;
+    transform: translateX(-50%);
     top: -10px;
 
     background-color: white;
@@ -172,6 +179,8 @@ header nav{
     justify-content: center;
 }
 .main_content-description > h2{
+    width: 90%;
+    max-width: 350px;
     font-family: var(--main-font);
     font-size: 1.3rem;
     text-align: center;
@@ -180,7 +189,7 @@ header nav{
     letter-spacing: 1.5px;
     line-height: 20px;
 
-    margin-bottom: 20px;
+    margin: 0 auto 20px auto;
 }
 .main_content-description > section{
     display: flex;
@@ -253,3 +262,5 @@ header nav{
 .main_social-media > article > button img{
     width: 100%;
 }
+
+
