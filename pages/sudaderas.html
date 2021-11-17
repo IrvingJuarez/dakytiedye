@@ -5,49 +5,58 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sudaderas</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Arabic:wght@300;400;500;700&family=Italiana&family=Lato&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="../style.css">
+    <link rel="stylesheet" href="../styles/sudaderas.css">
 </head>
 <body>
-    <header>
-        <button>
-            <img src="" alt="">
-        </button>
+    <div class="top-banner">
+        <h2>¡ Una Explosion de Color !</h2>
+    </div>
     
-        <button>
-            <img src="" alt="">
-        </button>
-    
-        <nav>
-            <ul>
-                <li><a href="">Inicio</a></li>
-                <li><a href="">Sets</a></li>
-                <li><a href="">Sudaderas</a></li>
-                <li><a href="">Doggies</a></li>
-            </ul>
-        </nav>
-    </header>
-
     <main>
+        <header>
+            <button>
+                <img src="../assets/icons/menu.svg" alt="menu icon">
+            </button>
+        
+            <button>
+                <img src="../assets/icons/search.svg" alt="magnifying glass icon">
+            </button>
+        
+            <nav>
+                <ul>
+                    <li><a href="../index.html">Inicio</a></li>
+                    <li><a href="./sets.html">Sets</a></li>
+                    <li><a href="./sudaderas.html">Sudaderas</a></li>
+                    <li><a href="./doggies.html">Doggies</a></li>
+                </ul>
+            </nav>
+        </header>
+
         <section class="sudaderas-main_photo main_photo">
-            <img src="" alt="">
+            <img src="../assets/imgs/sudaderas-main.JPG" alt="two women modeling">
         </section>
 
         <section class="sudaderas-main_slider main_slider">
             <article>
-                <div>
+                <div class="arrows-container">
                     <span>&laquo;</span>
-            
-                    <button>
-                        <span></span>
-                    </button>
-            
-                    <button>
-                        <span></span>
-                    </button>
-            
+
+                    <section>
+                        <button></button>
+    
+                        <button></button>
+                    </section>
+
                     <span>&raquo;</span>
                 </div>
             
-                <div>
+                <div class="tag-container">
                     <span>SUDADERAS</span>
                 </div>
 
@@ -56,12 +65,12 @@
 
         <section class="sudaderas-main_content-grid main_content-grid">
             <article>
-                <div>
-                    <img src="" alt="">
+                <div class="main_content-grid_img-container">
+                    <img src="../assets/imgs/sudaderas-body.jpg" alt="man modeling">
                 </div>
 
-                <div>
-                    <button>¡Conoce más de ellas!</button>
+                <div class="main_content-grid_btn-container">
+                    <a href="./sudaderas2.html">¡Conoce más de ellas!</a>
                 </div>
             </article>
         </section>
