@@ -44,6 +44,7 @@ header nav{
 
 .main_photos{
     width: 100%;
+    height: 60vh;
     display: flex;
     margin-bottom: 20px;
     align-items: flex-start;
@@ -51,11 +52,12 @@ header nav{
 }
 .main_photos > article{
     width: 49%;
+    height: 100%;
 }
 .main_photos-img-container{
     display: grid;
     place-content: center;
-    height: 200px;
+    height: 80%;
     overflow: hidden;
 }
 .main_photos-img-container > img{
@@ -72,6 +74,7 @@ header nav{
     transform: translate(-50%);
     left: 50%;
     top: -10px;
+    max-width: 250px;
     
     background-color: white;
     width: 60%;
@@ -118,19 +121,20 @@ header nav{
 
 
 .title{
-    width: 210px;
+    width: 90%;
     background-color: var(--main-color);
     text-align: center;
     padding: 2px;
     margin: 10px auto;
 
-    font-family: var(--third-font);
+    font-family: var(--main-font);
     font-weight: 100;
     letter-spacing: 2px;
     color: white;
+    max-width: 500px;
 }
 .main_colors-grid{
-    width: 300px;
+    width: 90%;
     margin: 0 auto;
     display: grid;
     grid-template-columns: repeat(4, 1fr);
@@ -149,18 +153,18 @@ header nav{
     margin: 2px auto;
 }
 
-.doggies-table{
+.doggies-table-content{
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
 }
-.doggies-table > table{
+.doggies-table table{
     width: 90%;
-    margin: 0 auto;
     font-size: 1.3rem;
     font-family: var(--main-font);
     border-collapse: collapse;
     margin-bottom: 20px;
+    max-width: 380px;
 }
 .table-header{
     background-color: red;
@@ -187,7 +191,12 @@ header nav{
 }
 
 .sudaderas-photo{
-    width: 100%;
+    display: grid;
+    place-content: center;
+    width: 90%;
+    margin: 10px auto;
+    max-height: 400px;
+    overflow: hidden;
 }
 .sudaderas-photo > img{
     width: 100%;
@@ -195,4 +204,44 @@ header nav{
 
 main{
     margin-bottom: 0;
+}
+
+@media screen and (min-width: 750px){
+    .main_photos{
+        height: 95vh;
+    }
+    .top-banner h2{
+        letter-spacing: 9px;
+        padding: 5px 0;
+    }
+    .tag-container{
+        letter-spacing: 4px;
+        font-size: 1.6rem;
+    }
+    .sizes-container{
+        margin-top: 10px;
+        font-size: 1.5rem;
+    }
+    .title{
+        font-size: 1.3rem;
+        letter-spacing: 8px;
+    }
+    .main_colors-grid{
+        max-width: 500px;
+    }
+    .main_colors-grid > div > span{
+        width: 35px;
+        height: 35px;
+        margin: 5px auto;
+    }
+    .main_colors-grid > div{
+        font-size: 1.1rem;
+        letter-spacing: 4px;
+    }
+    main > section{
+        margin-bottom: 30px;
+    }
+    .doggies-table-content{
+        align-items: center;
+    }
 }
