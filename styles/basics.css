@@ -50,6 +50,13 @@ body{
     letter-spacing: 3px;
     margin: 0 5px;
 }
+.pagination > .active{
+    font-weight: 600;
+}
+.pagination a{
+    text-decoration: none;
+    color: initial;
+}
 
 @media screen and (min-width: 750px){
     .tiedye-title{
