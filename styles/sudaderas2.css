@@ -81,6 +81,7 @@ footer{
     letter-spacing: 2px;
     text-align: center;
     font-size: 1.4rem;
+    max-width: 400px;
 }
 
 
@@ -100,5 +101,21 @@ footer{
 @media screen and (min-width: 750px){
     .sudaderas2-main_photo{
         height: 95vh;
+    }
+    .sudaderas2-main_photo > div:nth-child(1){
+        align-self: flex-start;
+    }
+    footer{
+        font-size: 1.8rem;
+    }
+    .sizes_sizes > span, .sizes_prices td{
+        font-size: 2rem;
+    }
+    .sudaderas2_sizes-title{
+        width: 350px;
+    }
+    .sudaderas2_sizes-title > h2{
+        font-size: 1.8rem;
+        letter-spacing: 6px;
     }
 }
