@@ -4,6 +4,7 @@ body{
 }
 .tiedye-title{
     width: 70%;
+    max-width: 270px;
     margin: 0 auto;
     text-align: center;
     font-family: var(--main-font);
@@ -138,7 +139,18 @@ body{
         margin: 5px auto;
     }
     .main_colors-grid > div{
-        font-size: 1.1rem;
+        font-size: 1.3rem;
         letter-spacing: 4px;
+    }
+
+    .tiedye-title{
+        font-size: 2.6rem;
+        max-width: 288px;
+    }
+    .tie-dye_grid > div, .sizes_sizes > span, .customize_styles{
+        font-size: 1.3rem;
+    }
+    .tie-dye_grid{
+        gap: 40px;
     }
 }
