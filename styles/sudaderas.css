@@ -105,6 +105,7 @@ header button > img{
     padding: 6px 0;
     background-color: var(--main-color);
 
+    text-align: center;
     font-family: var(--second-font);
 }
 .main_slider > article > .tag-container span{
