@@ -26,6 +26,7 @@ header{
     align-items: center;
     justify-content: space-between;
 
+    z-index: 2;
     padding: 13px;
 }
 header button{
@@ -42,12 +43,20 @@ header button > img{
 } */
 
 .main_photo{
+    position: relative;
     width: 100%;
     height: auto;
     max-height: 450px;
 }
-.main_photo > img{
+.main_photo > div{
+    width: 100vw;
+    height: inherit;
+}
+.main_photo > div, .main_photo img{
     width: 100%;
+}
+.slide-hidden{
+    display: none;
 }
 
 .main_slider{
@@ -243,6 +252,9 @@ header button > img{
     width: 100%;
 }
 
+.slider-arrow{
+    cursor: pointer;
+}
 
 @media screen and (min-width: 650px){
     .main_photo{
