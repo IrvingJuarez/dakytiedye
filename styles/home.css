@@ -47,6 +47,7 @@ header button > img{
     width: 100%;
     height: auto;
     max-height: 450px;
+    overflow: hidden;
 }
 .main_photo > div{
     width: 100vw;
