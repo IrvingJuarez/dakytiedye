@@ -247,6 +247,7 @@ header button > img{
     height: 25px;
     border: none;
 
+    background: none;
     margin: 0 9px;
 }
 .main_social-media > article > button img{
