@@ -48,9 +48,9 @@ body{
     color: white;
 }
 
-#dot-active{
+#dot-active, #dot-active2{
     background-color: black;
 }
-.slider-arrow{
+.slider-arrow, .slider-arrow2{
     cursor: pointer;
 }
